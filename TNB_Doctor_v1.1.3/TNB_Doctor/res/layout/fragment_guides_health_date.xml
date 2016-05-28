@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"
+        android:layout_below="@+id/main_titlebar_view" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/v_wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="280.3dp"
+                    android:layout_gravity="center_vertical" >
+
+                    <com.tencent.sugardoctor.widget.wheelview.WheelView
+                        android:id="@+id/v_wheel_year"
+                        android:layout_width="100dp"
+                        android:layout_height="280.3dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wheel_bg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:text="@string/year"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="280.3dp"
+                    android:layout_gravity="center_vertical" >
+
+                    <com.tencent.sugardoctor.widget.wheelview.WheelView
+                        android:id="@+id/v_wheel_month"
+                        android:layout_width="50dp"
+                        android:layout_height="280.3dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wheel_bg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:text="@string/month"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/v_wheel"
+                android:gravity="left"
+                android:paddingBottom="3dp"
+                android:textColor="@color/theme_color_green"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/theme_color_green"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="1/10"
+                android:textColor="@color/text_color_black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Button_Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/assess_question_next_sub" />
+
+</RelativeLayout>

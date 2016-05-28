@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/doctor_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yshi_28" />
+
+        <RelativeLayout
+            android:id="@+id/myrecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yshi_18" />
+
+            <TextView
+                android:id="@+id/temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/temp1"
+                android:text="我的记录"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/temp1"
+                android:text="查看所有饮食记录"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/collect_right" />
+        </RelativeLayout>
+
+        <View
+            style="@style/patient_item_sprite_line"
+            android:layout_marginTop="20dp" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/mycanteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/temp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yshi_20" />
+
+            <TextView
+                android:id="@+id/temp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/temp3"
+                android:text="我的食堂"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp4"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/temp3"
+                android:text="查看收藏的食堂或饮食范例"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/collect_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <View style="@style/patient_item_sprite_line" />
+
+    <TextView
+        android:id="@+id/basicfile_tv_pcode"
+        android:layout_width="wrap_content"
+        android:layout_height="39dip"
+        android:layout_marginLeft="10dip"
+        android:gravity="center"
+        android:text="@string/base_file_base_inf"
+        android:textColor="@color/text_defualt"
+        android:textSize="16sp" />
+
+    <View style="@style/patient_item_sprite_line" />
+
+</LinearLayout>

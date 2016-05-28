@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.comvee.tnb.view.IndexBottomView
+        android:id="@+id/layout_frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_frame_bottom"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/index_head_bg"
+            android:orientation="vertical">
+
+            <com.comvee.tnb.widget.TitleBarView
+                android:id="@+id/main_titlebar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.comvee.ui.rippleview.RippleView
+                    android:id="@+id/btn_zoom"
+                    android:layout_width="@dimen/assess_circle_radus"
+                    android:layout_height="@dimen/assess_circle_radus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    app:rv_alpha="0"
+                    app:rv_rippleDuration="300"
+                    app:rv_zoom="true"
+                    app:rv_zoomDuration="250"
+                    app:rv_zoomScale="1.05">
+
+                    <Button
+                        android:id="@+id/btn_assess_self"
+                        android:layout_width="175dip"
+                        android:layout_height="184dip"
+                        android:background="@drawable/btn_assess"
+                        android:text="@string/assess_before_start_ass"
+                        android:textColor="@drawable/btn_assess_text"
+                        android:textSize="24sp" />
+                </com.comvee.ui.rippleview.RippleView>
+
+                <ImageView
+                    android:id="@+id/btn_to_assess_abount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/pinggu_08"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_zoom"
+                    android:layout_marginLeft="29dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/pinggu_10"
+                        android:drawablePadding="5dip"
+                        android:text="@string/assess_before_recommend_task"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:drawableLeft="@drawable/pinggu_10"
+                        android:drawablePadding="5dip"
+                        android:text="@string/assess_before_doc_advice"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_zoom"
+                    android:layout_marginRight="29dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/pinggu_10"
+                        android:drawablePadding="5dip"
+                        android:text="@string/assess_before_compre_analysis"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:drawableLeft="@drawable/pinggu_10"
+                        android:drawablePadding="5dip"
+                        android:text="@string/assess_before_professional_ass"
+                        android:textColor="#04406e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_zoom"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:drawablePadding="5dp"
+                        android:text="@string/assess_before_already_ass"
+                        android:textColor="#115C58"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="18dp"
+                        android:paddingTop="13dp">
+
+                        <TextView
+                            android:id="@+id/tv_num0"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_num1"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_num2"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_num3"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_num4"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_num5"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/assess_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backage_color"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/assess_before_content"
+                    android:textColor="@color/theme_color_green"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View style="@style/patient_item_sprite_line" />
+
+                    <com.comvee.ui.rippleview.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:rv_alpha="80"
+                        app:rv_color="@color/gray_default_btn"
+                        app:rv_rippleDuration="250">
+
+                        <TextView
+                            android:id="@+id/btn_assess_demo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@color/white"
+                            android:drawableLeft="@drawable/assesstwo_05"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/tangniaobing_yh_06"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/assess_before_record_sample"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+                    </com.comvee.ui.rippleview.RippleView>
+
+                    <View style="@style/patient_item_sprite_line" />
+
+                    <com.comvee.ui.rippleview.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:rv_alpha="80"
+                        app:rv_color="@color/gray_default_btn"
+                        app:rv_rippleDuration="250">
+
+                        <TextView
+                            android:id="@+id/btn_assess_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dip"
+                            android:background="@color/white"
+                            android:drawableLeft="@drawable/assesstwo_04"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/tangniaobing_yh_06"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/assess_before_past_ass"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+                    </com.comvee.ui.rippleview.RippleView>
+
+                    <View style="@style/patient_item_sprite_line" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

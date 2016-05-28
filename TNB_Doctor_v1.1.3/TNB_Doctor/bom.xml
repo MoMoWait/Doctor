@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 北京兰贝科技有限公司版权所有 -->
+<project>
+
+    <package>
+
+        <!-- 不区分大小写，逗号隔开的metaName,代表不同SDK的渠道标识符 -->
+
+        <channels keyname="APP_CHANNEL" >
+
+            <!-- channel的数量代表最终生成的apk文件的数量 -->
+
+            <channel value="1000101" />
+
+            <channel value="1000102" />
+
+            <channel value="1000103" />
+
+            <channel value="1000104" />
+
+            <channel value="1000105" />
+
+            <channel value="1000106" />
+
+            <channel value="1000107" />
+
+            <channel value="1000108" />
+
+            <channel value="1000109" />
+
+            <channel value="1000110" />
+
+            <channel value="1000111" />
+
+            <channel value="1000112" />
+
+            <channel value="1000113" />
+
+            <channel value="1000114" />
+
+            <channel value="1000115" />
+
+            <channel value="1000116" />
+
+            <channel value="1000117" />
+
+            <channel value="1000118" />
+
+            <channel value="1000119" />
+
+            <channel value="1000120" />
+
+            <channel value="1000121" />
+
+            <channel value="1000122" />
+
+            <channel value="1000123" />
+
+            <channel value="1000124" />
+
+            <channel value="1000125" />
+
+            <channel value="1000126" />
+
+            <channel value="1000127" />
+
+            <channel value="1000128" />
+
+            <channel value="1000129" />
+
+            <channel value="1000130" />
+
+            <channel value="1000131" />
+
+            <channel value="1000132" />
+        </channels>
+
+        <keystore
+            passwd="androidkey"
+            path="C:\Users\Administrator\Desktop\androidkey" >
+
+            <alias
+                name="mylyandroid"
+                passwd="androidkey" />
+        </keystore>
+
+        <outpath value="E:\打包的软件\正式地址" />
+    </package>
+
+</project>

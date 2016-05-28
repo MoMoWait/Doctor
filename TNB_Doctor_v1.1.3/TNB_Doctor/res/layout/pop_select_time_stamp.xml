@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000" >
+
+    <RadioGroup
+         android:background="@drawable/btn_color_white"
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@drawable/btn_color_green_1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/pop_select_time_meal_time"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/radio_drawable_padding"
+            android:drawableRight="@drawable/selector_radio_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pop_select_time_breakfast"
+            android:textColor="#333333"
+            android:textSize="16sp" >
+        </RadioButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RadioButton
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:drawablePadding="@dimen/radio_drawable_padding"
+            android:drawableRight="@drawable/selector_radio_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pop_select_time_lunch"
+            android:textColor="#333333"
+            android:textSize="16sp" >
+        </RadioButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RadioButton
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:button="@null"
+       android:drawablePadding="@dimen/radio_drawable_padding"
+            android:drawableRight="@drawable/selector_radio_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pop_select_time_dinner"
+            android:textColor="#333333"
+            android:textSize="16sp" >
+        </RadioButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RadioButton
+            android:id="@+id/meal"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:button="@null"
+      android:drawablePadding="@dimen/radio_drawable_padding"
+            android:drawableRight="@drawable/selector_radio_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pop_select_time_addmeal"
+            android:textColor="#333333"
+            android:textSize="16sp" >
+        </RadioButton>
+    </RadioGroup>
+
+</RelativeLayout>

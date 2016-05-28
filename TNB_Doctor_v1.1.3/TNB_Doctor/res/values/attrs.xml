@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SmoothButton">
+        <attr name="transitionDrawable" format="reference" />
+        <attr name="transitionDrawableLength" format="integer" />
+        <attr name="transitionTextColorUp" format="color" />
+        <attr name="transitionTextColorDown" format="color" />
+    </declare-styleable>
+    <declare-styleable name="Switcher">
+
+        <!-- Defines switcher animation duration in ms. -->
+        <attr name="animationDuration" />
+        <!-- Defines switcher idle timeout in ms. -->
+        <attr name="idleTimeout" format="integer" />
+        <!-- Defines opened handle (drawable). -->
+        <attr name="decreaseButton" format="reference" />
+        <!-- Defines opened handle (drawable). -->
+        <attr name="increaseButton" format="reference" />
+    </declare-styleable>
+
+    <!-- 卡路里进度 -->
+    <declare-styleable name="TasksCompletedView">
+
+        <!--  -->
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CustomProgressBar">
+        <attr name="progressIndicator" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="textAlign">
+            <flag name="left" value="0" />
+            <flag name="center" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="offset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="NumericPageIndicator">
+        <attr name="outerBackground" format="reference" /> <!-- 焦点Page页码外圈 -->
+        <attr name="outerWidth" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="outerHeight" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="selectedIcon" format="reference" /> <!-- 页码图标 -->
+        <attr name="unselectedIcon" format="reference" /> <!-- 页码图标 -->
+        <attr name="iconWidth" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="iconHeight" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="trackBackground" format="reference" /> <!-- 两个页面中间分隔线 -->
+        <!--
+        <attr name="trackWidth" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        -->
+        <attr name="trackHeight" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="trackMargin" format="dimension" /> <!-- 分隔线与图标中间间隔 -->
+
+
+        <!--
+        <attr name="textStyle" />
+        <attr name="typeface" />
+        <attr name="fontFamily" />
+        -->
+
+        <attr name="selectedTextColor" format="reference|color" />
+        <attr name="unselectedTextColor" format="reference|color" />
+    </declare-styleable>
+    <!-- 圆环属性 -->
+    <declare-styleable name="RoundImageView">
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="roundRadus" format="dimension"></attr>
+        <attr name="ringColor1" format="color"></attr>
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+            <enum name="ring" value="2" />
+        </attr>
+    </declare-styleable>
+  <declare-styleable name="RoundProgressBar">  
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="ProgressBarRoundWidth" format="dimension"></attr>
+        <attr name="ProgressBarTextColor" format="color" />  
+        <attr name="ProgressBarTextSize" format="dimension" /> 
+        <attr name="max" format="integer"></attr> 
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+  </declare-styleable>
+    <!-- 横向的线-->
+    <style name="LineHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+
+    <!-- 纵向的线-->
+    <style name="LineVertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="p_unreached_color" format="color"/>
+        <attr name="p_reached_color" format="color"/>
+        <attr name="p_reached_bar_height" format="dimension"/>
+        <attr name="p_unreached_bar_height" format="dimension"/>
+        <attr name="p_text_size" format="dimension"/>
+        <attr name="p_text_color" format="color"/>
+        <attr name="p_text_offset" format="dimension"/>
+        <attr name="p_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundPedometerProgressBar">
+        <attr name="p_radius" format="dimension"/>
+    </declare-styleable>
+</resources>

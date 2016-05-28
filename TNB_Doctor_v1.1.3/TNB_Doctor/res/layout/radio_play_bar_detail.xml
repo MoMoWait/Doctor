@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv_duration"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/white" >
+
+        <View
+            style="@style/line_horizontal"
+            android:background="@color/color_gray_bg" />
+<!--
+        <ImageView
+            android:id="@+id/btn_list"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/radio_play_detail_list" />-->
+
+        <ImageView
+            android:id="@+id/btn_download"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/radio_playview_comment" />
+
+        <ImageView
+            android:id="@+id/btn_control"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@drawable/radio_play_detail_pause" />
+
+        <ImageView
+            android:id="@+id/btn_control_anim"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@drawable/radio_play_loading"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_control"
+            android:padding="10dp"
+            android:src="@drawable/radio_play_detail_next" />
+
+        <ImageView
+            android:id="@+id/btn_pre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_control"
+            android:padding="10dp"
+            android:src="@drawable/radio_play_detail_pre" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#847d7d"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#847d7d"
+        android:textSize="11sp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/Widget.SeekBar.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv_duration" />
+
+</RelativeLayout>

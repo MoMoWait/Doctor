@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 白色描边 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#ffffff" />
+
+    <stroke
+        android:width="0.8dp"
+        android:color="@color/theme_color_green" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/button_radius"
+        android:bottomRightRadius="@dimen/button_radius"
+        android:topLeftRadius="@dimen/button_radius"
+        android:topRightRadius="@dimen/button_radius" />
+
+</shape>

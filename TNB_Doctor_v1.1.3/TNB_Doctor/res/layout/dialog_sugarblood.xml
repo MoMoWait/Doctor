@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white_c"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_dialog_close" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_close"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:shadowColor="#ff999999"
+        android:shadowDx="0.5"
+        android:shadowDy="0.5"
+        android:shadowRadius="0.5"
+        android:text="@string/dialog_blood_tip1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <com.comvee.tnb.widget.CircleView
+        android:id="@+id/v_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_limit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_circle"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_limit"
+        android:drawableLeft="@drawable/sugarblood_0"
+        android:gravity="center_vertical"
+        android:padding="9dp"
+        android:shadowColor="#ff999999"
+        android:shadowDx="0.5"
+        android:shadowDy="0.5"
+        android:shadowRadius="0.5"
+        android:text="@string/dialog_sugar_tip"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_msg1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="#ff999999"
+        android:shadowDx="0.5"
+        android:shadowDy="0.5"
+        android:shadowRadius="0.5"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg1"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_history"
+            style="@style/Button_Green"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:text="@string/dialog_blood_search_his" />
+
+        <Button
+            android:id="@+id/btn_kown"
+            style="@style/Button_Orange"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="0dp"
+            android:text="@string/dialog_blood_get_it" />
+    </RelativeLayout>
+
+</RelativeLayout>

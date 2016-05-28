@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backage_color" >
+
+        <com.comvee.tnb.ui.xlistview.XListView
+            android:id="@+id/list_view_sys"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="20dip"
+            android:drawableTop="@drawable/task_no_data"
+            android:gravity="center"
+            android:text="@string/messageelist_no_message"
+            android:textColor="@color/text_color_1"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

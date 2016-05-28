@@ -1,0 +1,265 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comvee.tnb"
+    android:versionCode="46"
+    android:versionName="5.0.3.160523">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <action android:name="android.intent.action.MEDIA_MOUNTED" />
+    <action android:name="android.intent.action.USER_PRESENT" />
+    <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+    <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+
+    <application
+        android:name="com.comvee.tnb.TNBApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name=".activity.MainActivity"
+            android:icon="@drawable/icon"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="comvee" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.comvee.tnb.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.comvee.tnb.ui.book.BookWebActivity"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.comvee.tnb.activity.ImageDialogActivity"
+            android:label="图片详情"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <!-- 闹钟广播 -->
+
+
+        <!-- 闹钟弹窗 -->
+        <activity
+            android:name="com.comvee.ui.remind.TimeRemind"
+            android:allowTaskReparenting="false"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.comvee.tnb.ui.remind.RemindDialogActivity"
+            android:theme="@style/Translate"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <service android:name="com.comvee.tnb.ui.remind.RemindService"></service>
+        <!-- <service android:name="com.chenai.ts.service.DownloadService" /> -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="MY67XzyyRwlPVDDA11Iz8IMo" />
+
+        <!-- 腾讯手Q登录 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"></activity>
+
+        <!-- 阿里支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.comvee.tnb.ui.record.common.ShowImageViewpagerActivity"
+            android:theme="@style/IMTheme.Transparent"></activity>
+        <activity
+            android:name="com.comvee.tnb.ui.record.common.ShowSelectedViewPagerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <!-- <activity android:name="com.comvee.tnb.ui.record.common.ShowAlbumActivityActivity" > -->
+        <!-- </activity> -->
+        <!-- 阿里支付 -->
+        <receiver android:name="com.comvee.tnb.ui.index.BringToFrontReceiver">
+            <intent-filter>
+                <action android:name="neal.pushtest.action.BringToFront" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="APP_CHANNEL"
+            android:value="${CHANNEL}" />
+        <meta-data
+            android:name="HOST"
+            android:value="${HOST}" />
+
+        <!-- 友盟推送 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false"></receiver>
+        <receiver android:name="com.umeng.message.SystemReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.MessageReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.ElectionReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.comvee.tnb.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService">
+            <intent-filter>
+                <action android:name="com.comvee.tnb.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.comvee.tnb.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+        <service
+            android:name="com.umeng.message.UmengDownloadResourceService"
+            android:process=":download" />
+        <service
+            android:name="com.comvee.tnb.PushIntentService"
+            android:exported="true"
+            android:label="PushService" />
+        <service android:name="com.comvee.tnb.radio.DownLoadService"></service>
+        <service android:name=".pedometer.StepService"
+            android:process="com.base.basepedo.step"
+            android:priority="1000">
+            <intent-filter>
+                <!-- 系统启动完成后会调用-->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52807f6b56240b513e0da1c0" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="6b19cbc4431996a3fd8faca0ce400754" />
+        <!-- 友盟推送 -->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="izhangkong#izhangkong" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <activity
+            android:name="com.easemob.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"></activity>
+    </application>
+
+</manifest>

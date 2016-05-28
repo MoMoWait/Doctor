@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/wave1"
+        style="@style/head_wave" />
+
+    <ImageView
+        android:id="@+id/wave2"
+        style="@style/head_wave" />
+
+    <ImageView
+        android:id="@+id/wave3"
+        style="@style/head_wave" />
+
+    <ImageView
+        android:id="@+id/wave4"
+        style="@style/head_wave" />
+
+    <ImageView
+        android:id="@+id/wave5"
+        style="@style/head_wave" />
+</RelativeLayout>

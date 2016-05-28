@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_five_no_recipe_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:background="@drawable/guides_seletion_ques_btn"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dip"
+        android:textStyle="bold"
+        android:tag="0"
+        android:drawableRight="@drawable/dir_right"
+        android:paddingRight="10dip"
+        android:layout_margin="5dip"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</LinearLayout>

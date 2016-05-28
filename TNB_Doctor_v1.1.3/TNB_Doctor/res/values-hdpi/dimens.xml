@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_small_size">13sp</dimen>
+    <dimen name="text_middle_size">16sp</dimen>
+    <dimen name="text_big_size">20sp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="guides_ques_three_item_offset">20dp</dimen>
+    <dimen name="luancher_width">300dip</dimen>
+    <dimen name="dot_margin_bottom">90dip</dimen>
+    <dimen name="radio_play_circle_radus">230dp</dimen>
+    <dimen name="assess_circle_radus">180dp</dimen>
+</resources>

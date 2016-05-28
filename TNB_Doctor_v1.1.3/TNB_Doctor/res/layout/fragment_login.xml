@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/login_user_account_signin"
+                android:textColor="#666666" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/login_01"
+                android:drawablePadding="10dp"
+                android:hint="@string/login_username"
+                android:imeOptions="actionNext"
+                android:maxLength="11"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="20sp" />
+
+            <!--
+                 <com.comvee.ui.widget.GeniusEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:hint="@string/login_username"
+                android:textColorHint="#cccccc"
+                android:imeOptions="actionNext"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:textColor="#333333"
+                app:g_theme="@array/GlacierGray"
+                app:g_fieldStyle="transparent"
+                app:g_titlePaddingTop="4dp"
+                app:g_titlePaddingLeft="12dp"
+                app:g_titleTextColor="#333333"
+                app:g_titleTextSize="12sp" />
+            -->
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <!--
+                 <com.comvee.ui.widget.GeniusEditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:hint="@string/login_pwd"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="20sp"
+                app:g_theme="@array/GlacierGray"
+                app:g_fieldStyle="transparent"
+                app:g_titlePaddingTop="4dp"
+                app:g_titlePaddingLeft="12dp"
+                app:g_titleTextColor="#333333"
+                app:g_titleTextSize="12sp"
+                />
+            -->
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/login_03"
+                android:drawablePadding="10dp"
+                android:hint="@string/login_pwd"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="20sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <TextView
+                android:id="@+id/btn_reset_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:paddingRight="15dp"
+                android:text="@string/login_forget_pwd"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/Button_Orange"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_login_submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_regist"
+                    style="@style/Button_Green"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="@string/login_register_30_second"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_select_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#eeeeee"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/login_user_under_account_to_login"
+                android:textColor="#666666" />
+
+            <ImageView
+                android:id="@+id/btn_bind_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:drawingCacheQuality="high"
+                android:src="@drawable/qq_login" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/login_tip1"
+                android:textColor="@color/text_defualt"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/check_style_1_b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_agree"
+            android:textColor="@color/text_defualt" />
+
+        <TextView
+            android:id="@+id/btn_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/login_tip2"
+            android:textColor="@color/theme_color_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/huanyingye" >
+        </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

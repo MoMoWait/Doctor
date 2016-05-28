@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_cengter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_man1" />
+
+    <View
+        android:id="@+id/view_cengter"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1px"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_man"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/patient_item_sprite_line"
+            android:layout_marginTop="50dip" />
+
+        <EditText
+            android:id="@+id/edt_input"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="@string/input_name_nickname"
+            android:maxLength="8"
+            android:textColorHint="#cccccc" />
+
+        <View style="@style/patient_item_sprite_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Button_Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/input_name_start_health_travel" />
+
+</RelativeLayout>

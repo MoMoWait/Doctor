@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_head_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp" >
+
+                    <com.comvee.tnb.widget.RoundProgressBar
+                        android:id="@+id/layout_progressbar"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_centerInParent="true"
+                        app:ProgressBarRoundWidth="10dip"
+                        app:roundColor="#4a95f0"
+                        app:textIsDisplayable="false" >
+                    </com.comvee.tnb.widget.RoundProgressBar>
+
+                    <TextView
+                        android:id="@+id/tv_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="45sp" />
+
+                    <ImageView
+                        android:id="@+id/image_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/index_05" />
+
+                    <TextView
+                        android:id="@+id/tv_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_value"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toRightOf="@id/tv_value"
+                        android:drawableLeft="@drawable/index_dir_up"
+                        android:paddingBottom="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_value"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="mmol/L"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/index_new_fasting"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/tv_history_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/index_pre_record"
+                            android:textColor="#b9dcfb"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                    style="@style/line_vertical"
+                        android:layout_height="30dip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dip"
+                        android:background="#b9dcfb" />
+
+                    <LinearLayout
+                        android:id="@+id/limit_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_limit_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/index_control_goal"
+                            android:textColor="#b9dcfb"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/task_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtbj"
+                android:orientation="vertical"
+                android:paddingBottom="5dip" >
+
+                <ImageView
+                    android:layout_width="13dip"
+                    android:layout_height="7dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dip"
+                    android:src="@drawable/index_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/index_task_whit_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dip"
+                        android:layout_marginTop="7dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.comvee.tnb.widget.RoundImageView
+                            android:id="@+id/task_img"
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="7dip"
+                            android:src="@drawable/img_defualt1"
+                            app:type="circle" />
+
+                        <TextView
+                            android:id="@+id/task_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/task_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="2"
+                            android:drawableRight="@drawable/index_09"
+                            android:gravity="right"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/task_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="8dip"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/patient_item_sprite_line" />
+
+            <com.comvee.tnb.widget.MyGridView
+                android:id="@+id/index_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@drawable/seletion_default_btn"
+                android:layout_weight="1"
+                android:numColumns="2" >
+            </com.comvee.tnb.widget.MyGridView>
+
+            <View
+                style="@style/patient_item_sprite_line" />
+        </LinearLayout>
+
+</RelativeLayout>

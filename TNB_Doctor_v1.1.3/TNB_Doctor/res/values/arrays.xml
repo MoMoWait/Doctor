@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_arr">
+        <item>空腹时</item>
+        <item>早餐后2小时</item>
+        <item>午餐前</item>
+        <item>午餐后2小时</item>
+        <item>晚餐前</item>
+        <item>晚餐后2小时</item>
+        <item>睡觉前</item>
+    </string-array>
+    <string-array name="arr">
+        <item>4.4-7.0</item>
+        <item>4.4-10.0</item>
+    </string-array>
+</resources>

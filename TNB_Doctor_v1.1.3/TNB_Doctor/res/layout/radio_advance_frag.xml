@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_bannel"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/layout_top"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/iv_bannel"
+        android:background="@color/color_gray_bg" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:padding="10dp"
+        android:text="内容介绍"
+        android:textColor="@color/txt_black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label"
+        android:padding="10dp"
+        android:textColor="@color/text_defualt"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_remind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="提醒"
+        android:textColor="@color/txt_black"
+        android:textSize="16sp" />
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_above="@id/btn_remind"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

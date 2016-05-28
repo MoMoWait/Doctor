@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_insertDt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:singleLine="true"
+        android:textColor="#b3b3b3"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_insertDt_value" >
+
+        <com.comvee.tnb.widget.RoundImageView
+            android:id="@+id/iv_doc_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_head"
+            app:type="circle" />
+
+        <com.comvee.tnb.widget.RoundImageView
+            android:id="@+id/iv_pat_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_head"
+            android:visibility="invisible"
+            app:type="circle" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/iv_doc_photo"
+            android:layout_toRightOf="@+id/iv_pat_photo"
+            android:textColor="@color/black"
+            android:textSize="12.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tem_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="50dip"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="@style/myProgressBarStyle"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:indeterminateDuration="1000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_message_state"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/message_fail"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_content_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:minWidth="20dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dip"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.comvee.ui.RoundedImageView
+                    android:id="@+id/iv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="100.0dip"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    app:corner_radius="10dp" />
+
+                <View
+                    android:id="@+id/alpha_layer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_content"
+                    android:layout_alignLeft="@+id/iv_content"
+                    android:layout_alignRight="@+id/iv_content"
+                    android:layout_alignTop="@+id/iv_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_voicetime_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10.0dip"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15.0dip"
+                    android:visibility="gone" />
+
+                <com.comvee.tnb.widget.Voice.PlayImageView
+                    android:id="@+id/iv_voice_play"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_voicetime_right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_voicetime_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_voice_play"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15.0dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/firstline"
+        style="@style/line_horizontal"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="1px"
+        android:paddingTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:id="@+id/tem1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/hyd_05" />
+
+            <ImageView
+                android:id="@+id/tem2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/collect_right" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tem2"
+                android:layout_toRightOf="@id/tem1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="sdfsadf"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/tem2"
+                android:layout_toRightOf="@id/tem1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="dsfsfd"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.comvee.tnb.widget.GridView4Conflict
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:columnWidth="70dp"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="none"
+            android:verticalSpacing="10dp" >
+        </com.comvee.tnb.widget.GridView4Conflict>
+
+        <View
+            android:id="@+id/tem4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_color" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/tem5"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/backage_color" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="1px"
+        android:paddingTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:id="@+id/tem1_doctor"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/yishjd_03" />
+
+             <ImageView
+                 android:id="@+id/tem2_doctor"
+                 android:layout_width="10dp"
+                 android:layout_height="10dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                  />
+
+            <TextView
+                android:id="@+id/name_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tem1_doctor"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="sdfsadf"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_doctor"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tem1_doctor"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="dsfsfd"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+         <com.comvee.tnb.widget.GridView4Conflict
+             android:id="@+id/gridview_doctor"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="55dp"
+             android:layout_marginRight="35dp"
+             android:layout_marginTop="10dp"
+             android:columnWidth="70dp"
+             android:horizontalSpacing="10dp"
+             android:listSelector="@android:color/transparent"
+             android:numColumns="auto_fit"
+             android:scrollbars="none"
+             android:stretchMode="none"
+             android:verticalSpacing="10dp" >
+         </com.comvee.tnb.widget.GridView4Conflict>
+        <TextView
+            android:id="@+id/answer_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingLeft="55dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="dsfsfdesfsdfsdfsdfsdfsfsdfsfdsasadassdfsdfsdfsdfsdfsdfsdfs"
+            android:paddingRight="35dp"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+        <View
+            android:id="@+id/tem4_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_color" >
+        </View>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/tem5_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/backage_color" >
+    </RelativeLayout>
+</LinearLayout>

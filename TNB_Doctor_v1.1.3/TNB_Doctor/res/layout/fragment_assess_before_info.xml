@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/remind_icon_1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/assess_before_science"
+                android:textColor="@color/black"
+                android:textSize="20.0sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_msg_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="42dp"
+                android:text="@string/assess_before_content1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_middle_size" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/server_item_doc_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/remind_icon_2"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/assess_before_how_to_ass"
+                android:textColor="@color/black"
+                android:textSize="20.0sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_msg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="42dp"
+                android:text="assess_before_content2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_middle_size" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/server_item_doc_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/remind_icon_3"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/assess_wasttime"
+                android:textColor="@color/black"
+                android:textSize="20.0sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_msg_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="42dp"
+                android:text="@string/assess_three_ten_min"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_middle_size" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/server_item_doc_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_assess_self_help"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/quetion_help_sign" />
+
+            <Button
+                android:id="@+id/btn_assess_self"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/btn_assess_self_help"
+                android:text="@string/assess_auto_ass" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/btn_assess_doc_help"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/quetion_help_sign" />
+
+            <Button
+                android:id="@+id/btn_assess_doc"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/btn_assess_doc_help"
+                android:text="@string/assess_doc_ass" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

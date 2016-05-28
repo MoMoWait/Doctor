@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.comvee.tnb.widget.TitleBarView
+            android:id="@+id/main_titlebar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/patient_item_sprite_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_button_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backage_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/all_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/optext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/prog3"
+                    android:gravity="center_vertical"
+                    android:text="全部开始"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/all_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/lajitong_2"
+                    android:drawablePadding="3dp"
+                    android:text="一键清空"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/patient_item_sprite_line" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:divider="@color/line"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:listSelector="@null"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <com.comvee.tnb.view.RadioPlayView
+        android:id="@+id/layout_play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         >
+    </com.comvee.tnb.view.RadioPlayView>
+
+</RelativeLayout>

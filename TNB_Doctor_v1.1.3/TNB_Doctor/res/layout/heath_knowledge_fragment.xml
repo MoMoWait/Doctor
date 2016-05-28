@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/group_of_viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="130dip" >
+
+                <com.comvee.tnb.ui.heathknowledge.MyViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </com.comvee.tnb.ui.heathknowledge.MyViewPager>
+
+                <LinearLayout
+                    android:id="@+id/indicator_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <com.comvee.ui.RoundedImageView
+                    android:id="@+id/tnb_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:corner_radius="2dip" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal" >
+
+                <com.comvee.tnb.widget.GridView4Conflict
+                    android:id="@+id/knowledge_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_9"
+                    android:layout_marginRight="@dimen/space_9"
+                    android:horizontalSpacing="8dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:verticalSpacing="8dip" >
+                </com.comvee.tnb.widget.GridView4Conflict>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

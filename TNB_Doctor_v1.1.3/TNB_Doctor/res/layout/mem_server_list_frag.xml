@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+   
+
+    <include layout="@layout/doctor_details_head_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/group_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/btn_ask"
+                style="@style/Button_Orange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/yisheng_83" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_text_of_msg"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_tell"
+                style="@style/Button_Green"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/yisheng_85" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_text_of_tell"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            style="@style/patient_item_sprite_line"
+            android:layout_above="@+id/group_btn" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/doc_ser_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_doc_addrss"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="15sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/backage_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/doc_describe_label"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.comvee.tnb.widget.JustifyTextView
+                        android:id="@+id/tv_doc_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <LinearLayout
+                    android:id="@+id/group_server_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_private_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@color/backage_color"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="@string/mem_server_label"
+                        android:textColor="@color/text_color_2"
+                        android:textSize="16sp" />
+
+                    <View style="@style/patient_item_sprite_line" />
+
+                    <ListView
+                        android:id="@+id/lv_mem_server_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/line"
+                        android:dividerHeight="0.4dip"
+                        android:listSelector="@color/transparent"
+                        android:scrollbars="none" >
+                    </ListView>
+
+                    <View style="@style/patient_item_sprite_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tn_buy_server"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/seletion_default_btn"
+                            android:gravity="center"
+                            android:text="@string/buy_server_text"
+                            android:textColor="@color/theme_color_green"
+                            android:textSize="16sp" />
+
+                        <View style="@style/patient_item_sprite_line" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

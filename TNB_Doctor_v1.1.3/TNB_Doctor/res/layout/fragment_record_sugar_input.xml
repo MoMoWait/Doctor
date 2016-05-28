@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_record_decs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/showButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:text="@string/set"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/icon00" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/btn_settime"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_border"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="14dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tendency_add_record_time" />
+
+                <TextView
+                    android:id="@+id/tv_settime"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/record_sugar_reference_range" />
+
+            <!-- 偏高偏低 提示 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_input_status"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_status_decs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon00"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/theme_color_green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_status_decs"
+                    android:padding="10dp"
+                    android:textColor="@color/theme_color_green" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_food"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_food"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/food0"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_none" />
+
+                <TextView
+                    android:id="@+id/food1"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_appropriate_amount" />
+
+                <TextView
+                    android:id="@+id/food2"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_too_less" />
+
+                <TextView
+                    android:id="@+id/food3"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/record_sugar_too_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_sport"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sport0"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_none" />
+
+                <TextView
+                    android:id="@+id/sport1"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_appropriate_amount" />
+
+                <TextView
+                    android:id="@+id/sport2"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_light" />
+
+                <TextView
+                    android:id="@+id/sport3"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/record_sugar_severe" />
+            </LinearLayout>
+            <!-- 3 -->
+
+            <LinearLayout
+                android:id="@+id/layout_feel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <!-- android:visibility="gone" -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_mood"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/feel0"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_silence" />
+
+                <TextView
+                    android:id="@+id/feel1"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_happy" />
+
+                <TextView
+                    android:id="@+id/feel2"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_unhappy" />
+
+                <TextView
+                    android:id="@+id/feel3"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/record_sugar_angry" />
+            </LinearLayout>
+            <!-- 糖尿病 -->
+
+            <LinearLayout
+                android:id="@+id/layout_medicine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_drug"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicine0"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_none" />
+
+                <TextView
+                    android:id="@+id/medicine1"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_appropriate_amount" />
+
+                <TextView
+                    android:id="@+id/medicine2"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_too_less" />
+
+                <TextView
+                    android:id="@+id/medicine3"
+                    style="@style/record_item_input"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/record_sugar_too_more" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_decs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:hint="@string/saveSms"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_decs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text_defualt"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/btn_modify"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/btn_remove"
+                style="@style/Button_Red"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sprite_line"
+        style="@style/patient_item_sprite_line"
+        android:layout_marginLeft="10.0dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seletion_default_btn"
+         >
+
+        <ImageView
+            android:id="@+id/img_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/member_input_sgin" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/left_frag_dir" />
+
+        <TextView
+            android:id="@+id/basicfile_key"
+            style="@style/text_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/text_color_1"
+            android:paddingRight="10dp"
+            android:layout_marginTop="7dip"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/basicfile_value"
+            style="@style/text_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basicfile_key"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:textColor="@color/theme_color_green"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/basicfile_value_edi"
+            style="@style/text_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"          
+            android:layout_below="@+id/basicfile_key"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="10.0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

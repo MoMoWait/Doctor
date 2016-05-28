@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/tangniaobing_yh_06"
+            android:gravity="center"
+            android:text="@string/title_input_phone"
+            android:textColor="#666666"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/tangniaobing_yh_06"
+            android:gravity="center"
+            android:text="@string/title_input_sms_code"
+            android:textColor="#666666"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_regest_step3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/title_input_pwd"
+            android:textColor="@color/theme_color_green"
+            android:textSize="16.0sp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+       style="@style/patient_item_sprite_line"  />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_up"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/input_name"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp"
+            android:visibility="gone" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_up"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/input_pwd"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_pwd_repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_buttom"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/input_pwd_repeat"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_to_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/msg_server"
+            android:textColor="@color/theme_color_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_to_msg"
+            android:drawableLeft="@drawable/check_style_1_b"
+            android:drawablePadding="7dp"
+            android:text="@string/msg_server1"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/Button_Green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/finish"
+        android:textSize="16sp" />
+
+</LinearLayout>

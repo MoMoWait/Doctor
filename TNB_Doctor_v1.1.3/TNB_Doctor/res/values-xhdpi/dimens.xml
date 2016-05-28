@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_small_size">16sp</dimen>
+    <dimen name="text_middle_size">16sp</dimen>
+    <dimen name="text_big_size">20sp</dimen>
+
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="guides_ques_three_item_offset">20dp</dimen>
+    <dimen name="radio_drawable_padding">180dp</dimen>
+    <dimen name="luancher_width">360dip</dimen>
+    <dimen name="dot_margin_bottom">100dip</dimen>
+    <dimen name="radio_play_circle_radus">280dp</dimen>
+    <dimen name="assess_circle_radus">220dp</dimen>
+
+</resources>

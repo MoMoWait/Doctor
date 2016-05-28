@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="8dip"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip"
+        android:paddingTop="8dip" >
+
+        <ImageView
+            android:id="@+id/doc_server_img"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/doctor1" />
+
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/doc_server_img"
+            android:drawablePadding="5dip"
+            android:paddingLeft="15dip"
+            android:textColor="#333333"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+    <View
+        style="@style/patient_item_sprite_line"
+        android:layout_marginBottom="13dip" />
+
+    <TextView
+        android:id="@+id/doc_serverperiod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="5dip"
+        android:text="@string/buy_server_choose_cycle"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</LinearLayout>

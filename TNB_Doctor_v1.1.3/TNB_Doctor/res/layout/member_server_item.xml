@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/private_img"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/doctor1" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/private_img"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dip"
+            android:textColor="@color/follow_no_repeat"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/member_server_list_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/private_doctor_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sirenyisheng2_03"
+        android:visibility="gone" />
+
+</RelativeLayout>

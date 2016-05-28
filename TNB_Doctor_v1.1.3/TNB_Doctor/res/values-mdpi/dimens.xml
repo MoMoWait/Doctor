@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_small_size">13sp</dimen>
+    <dimen name="text_middle_size">14sp</dimen>
+    <dimen name="text_big_size">18sp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="guides_ques_three_item_offset">20dp</dimen>
+
+</resources>

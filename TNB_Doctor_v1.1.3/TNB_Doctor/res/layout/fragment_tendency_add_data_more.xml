@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tendency_more_title"
+                android:paddingLeft="15dp"
+                android:text="@string/tendency_add_recommend_record_pro" />
+
+            <com.comvee.tnb.widget.ScrollGridView
+                android:id="@+id/grid_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="2"
+                
+                android:orientation="vertical" />
+
+            <TextView
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tendency_more_title"
+                android:paddingLeft="15dp"
+                android:text="@string/tendency_add_recommend_more_record_pro" />
+
+            <com.comvee.tnb.widget.ScrollGridView
+                android:id="@+id/grid_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="2" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

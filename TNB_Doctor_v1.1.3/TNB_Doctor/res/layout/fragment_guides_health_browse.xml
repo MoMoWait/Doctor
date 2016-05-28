@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_green"
+        android:focusableInTouchMode="true" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fbfbfb" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="80dp" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/txt_black"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+
+
+                <WebView
+                    android:id="@+id/v_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#99000000"
+                    android:gravity="center"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            style="@style/line_horizontal"
+            android:layout_above="@+id/layout_bottom"
+              />
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/btn_pre"
+                style="@style/Button_Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="0"
+                android:text="@string/book_class_pre_pag"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/btn_next"
+                style="@style/Button_Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="1"
+                android:text="@string/book_class_nex_pag"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

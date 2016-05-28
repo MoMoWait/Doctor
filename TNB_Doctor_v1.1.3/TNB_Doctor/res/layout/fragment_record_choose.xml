@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/page_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_amin_alpha"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/btn_record_total"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_border"
+                android:drawableLeft="@drawable/icon_record100"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_general_analysys"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_1"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white_up"
+                android:drawableLeft="@drawable/icon_record101"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_food_ana"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_2"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_white_center"
+                android:drawableLeft="@drawable/icon_record102"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_sport_analysys"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_3"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_white_center"
+                android:drawableLeft="@drawable/icon_record103"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_life_analysis"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_4"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_white_center"
+                android:drawableLeft="@drawable/icon_record104"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_sentiment_analysis"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_5"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_white_center"
+                android:drawableLeft="@drawable/icon_record105"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_analysis_of_drug_use"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_record_6"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_white_buttom"
+                android:drawableLeft="@drawable/icon_record106"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/dir_right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="@string/record_choose_blood_glucose_monitoring_and_analysis"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

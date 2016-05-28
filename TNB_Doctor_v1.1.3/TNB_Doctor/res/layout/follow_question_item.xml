@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="9dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp"
+        android:paddingTop="9dp" >
+
+        <TextView
+            android:id="@+id/tv_qt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/follow_question_arrow"
+            android:textColor="#333333"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/follow_question_arrow"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignBaseline="@+id/tv_qt_name"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/collect_right"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/tv_qt_value_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_qt_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/follow_question_arrow"
+            android:background="@drawable/bg_deit"
+            android:hint="@string/follow_question_no_fill"
+            android:paddingRight="5dp"
+            android:phoneNumber="true"
+            android:textColor="@color/theme_color_green"
+            android:textSize="17.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_qt_value_below"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_qt_name"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/follow_question_arrow"
+            android:textColor="@color/theme_color_green"
+            android:textSize="17.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

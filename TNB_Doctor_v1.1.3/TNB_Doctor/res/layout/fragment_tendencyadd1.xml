@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backage_color"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="5dip" >
+
+                <LinearLayout
+                    android:id="@+id/btn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="162dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/blood_sugar"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/tendencyadd1_laboratory_sheet"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_22" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/tendencyadd1_glycosylated_hemoglobin"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:id="@+id/btn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/blood_pressure"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/height_and_weight"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="169dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/select_btn_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/hyd_23" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dip"
+                        android:gravity="center"
+                        android:text="@string/tendecnyadd1_health_log"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

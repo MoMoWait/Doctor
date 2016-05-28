@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backage_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_calendar_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.comvee.tnb.widget.TitleBarView
+            android:id="@+id/main_titlebar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.comvee.tnb.widget.Panel
+            android:id="@+id/slidingdrawer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            panel:animationDuration="60"
+            panel:closedHandle="@drawable/panel_close"
+            panel:content="@+id/layout_calendar_content"
+            panel:handle="@+id/handle"
+            panel:linearFlying="true"
+            panel:openedHandle="@drawable/panel_open"
+            panel:position="top" >
+
+            <ImageButton
+                android:id="@id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip" />
+
+            <LinearLayout
+                android:id="@id/layout_calendar_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.comvee.tnb.widget.Panel>
+
+        <ScrollView
+            android:id="@+id/layout_tnb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record0"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_collocation"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record1"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_normal_amount"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_vegetables"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record3"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_fat"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record4"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_salt"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record6"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_sport"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record7"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_smoke"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record8"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_drink"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record10"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_drug"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record9"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_sugar_test"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/layout_notnb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record0"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_collocation"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record1"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_normal_amount"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_food_vegetables"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record3"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_fat"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record5"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_salt"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record3"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_sugar_drinkwater"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record6"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_sport"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record7"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_smoke"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record8"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_drink"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_record_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn_white"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_frag_dir" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_record9"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/record_sugar_mood"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_value"
+                            style="@style/text_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

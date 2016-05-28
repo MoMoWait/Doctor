@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seletion_default_btn"
+     >
+
+    <TextView
+        android:id="@+id/remind_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="@string/item_remind_before_breakfast"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/remind_remark"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/collect_left" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/remind_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="24:24"
+                android:textColor="#333333"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/remind_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+              
+                android:singleLine="true"
+                android:text="@string/item_remind_week"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/remind_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:button="@drawable/cb_check_bg"
+        android:minWidth="50dip"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/remind_check"
+        android:background="@color/line" />
+
+</RelativeLayout>

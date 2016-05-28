@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/checkboxstyle_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:checked="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_booklogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_toLeftOf="@id/checkbox"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/iv_booklogo"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/collect_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_1"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/collect_tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/collect_tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_defualt"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/patient_item_sprite_line"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/group_btn" />
+</RelativeLayout>

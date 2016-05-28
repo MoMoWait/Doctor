@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View style="@style/patient_item_sprite_line" />
+
+    <View
+        style="@style/patient_item_sprite_line"
+        android:layout_marginTop="15dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="@string/amount_text"
+            android:textColor="@color/text_color_1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/server_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/patient_item_sprite_line" />
+
+    <View
+        style="@style/patient_item_sprite_line"
+        android:layout_marginTop="15dip" />
+
+    <LinearLayout
+        android:id="@+id/group_offset"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:background="@drawable/seletion_default_btn"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/gift_certificate_name"
+                android:textColor="@color/text_color_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/gift_explain"
+                android:textColor="@color/text_color_3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/offset_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/left_frag_dir"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="@color/text_color_3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/patient_item_sprite_line" />
+
+    <LinearLayout
+        android:id="@+id/sugar_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="24dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sirenyishengaz_33_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_server_lookfor"
+                android:textColor="@color/theme_color_green"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="160dip"
+                android:layout_height="1dip"
+                android:background="@color/theme_color_green" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

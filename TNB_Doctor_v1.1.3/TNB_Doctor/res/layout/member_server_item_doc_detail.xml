@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seletion_default_btn"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/head_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.comvee.tnb.widget.RoundImageView
+            android:id="@+id/img_doc"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/doctor1"
+            app:type="circle" />
+
+        <TextView
+            android:id="@+id/tv_my_doctor_lable"
+            android:layout_width="50dip"
+            android:layout_height="14dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/bg_radius_color_of_ff9c00"
+            android:gravity="center"
+            android:text="@string/left_fragment_my_doctor"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_group"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_color_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_doc_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doc_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_label_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radius_color_of_00beff"
+                android:paddingBottom="3dip"
+                android:paddingLeft="2.5dip"
+                android:paddingRight="2.5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/theme_color_green"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_label_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/bg_radius_color_of_00beff"
+                android:paddingBottom="3dip"
+                android:paddingLeft="2.5dip"
+                android:paddingRight="2.5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/theme_color_green"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_label_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/bg_radius_color_of_00beff"
+                android:paddingBottom="3dip"
+                android:paddingLeft="2.5dip"
+                android:paddingRight="2.5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/theme_color_green"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/patient_item_sprite_line"
+        android:layout_alignParentBottom="true" >
+    </View>
+
+</RelativeLayout>

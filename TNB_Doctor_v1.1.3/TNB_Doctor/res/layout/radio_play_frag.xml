@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawingCacheQuality="low"
+        android:scaleType="centerCrop"
+         />
+
+    <com.comvee.tnb.widget.BlurringView
+        android:id="@+id/layout_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawingCacheQuality="low"
+        app:blurRadius="11"
+        app:downsampleFactor="6"
+        app:overlayColor="#7000" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_bar_padding"
+        android:padding="15dp"
+        android:src="@drawable/radio_play_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_bar_padding"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.comvee.tnb.ui.heathknowledge.RadioViewPager
+        android:id="@+id/RadioViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+        <!--<com.comvee.ui.RoundedImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="@dimen/radio_play_circle_radus"
+            android:layout_height="@dimen/radio_play_circle_radus"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawingCacheQuality="low"
+            android:scaleType="centerCrop"
+            android:src="@drawable/radio_bg"
+            app:border_color="#33000000"
+            app:border_width="10dp"
+            app:is_oval="true" />-->
+
+
+    <com.comvee.tnb.view.RadioMarqueeTextView
+        android:id="@+id/tv_info"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/RadioViewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/btn_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/btn_comment" />
+
+    <ImageView
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/play_down" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="30dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="1dp"
+            android:max="100"
+            android:progressDrawable="@drawable/hori_progress_styl1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/btn_comment"
+        android:src="@drawable/radio_play_share" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_above="@+id/playview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:paddingTop="5dp"
+            android:text="下载"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <com.comvee.tnb.view.RadioPlayDetailView
+        android:id="@+id/playview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.comvee.tnb.view.RadioPlayDetailView>
+
+</RelativeLayout>

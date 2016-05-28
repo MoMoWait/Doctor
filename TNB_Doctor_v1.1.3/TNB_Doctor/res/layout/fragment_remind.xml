@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/remind_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.comvee.tnb.widget.PickerView
+                android:id="@+id/hour_pv"
+                android:layout_width="80dp"
+                android:layout_height="160dp" />
+
+            <com.comvee.tnb.widget.PickerView
+                android:id="@+id/minute_pv"
+                android:layout_width="80dp"
+                android:layout_height="160dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remind_week"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remind_time"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:paddingBottom="5dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/remind_repeat_time"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_1"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_day"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_2"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_one"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_3"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_two"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_4"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_tree"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_5"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_four"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_6"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_five"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/remind_7"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@drawable/round_fill_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/remind_six"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginTop="5dip"
+                android:paddingBottom="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remind_week"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/remind_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edit02"
+                android:gravity="center"
+                android:hint="@string/remind_append_desc"
+                android:lines="4" />
+
+            <Button
+                android:id="@+id/btn_remind_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_green"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/remind_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/remind_warming_tip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

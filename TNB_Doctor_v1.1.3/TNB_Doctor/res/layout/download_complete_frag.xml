@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.comvee.tnb.widget.TitleBarView
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/patient_item_sprite_line" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+        <View style="@style/patient_item_sprite_line" />
+
+        <TextView
+            android:id="@+id/btn_download_more"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/radio_download_more"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="下载更多"
+            android:textColor="@color/txt_green"
+            android:textSize="16sp" />
+
+        <View style="@style/patient_item_sprite_line" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:divider="@color/line"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:listSelector="@drawable/seletion_default_btn"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/seletion_default_btn"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/quanxuan" />
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:text="@string/select_all"
+                android:textColor="@color/text_color_2"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/seletion_default_btn"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/lajitong3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.comvee.tnb.view.RadioPlayView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"/>
+
+
+</RelativeLayout>

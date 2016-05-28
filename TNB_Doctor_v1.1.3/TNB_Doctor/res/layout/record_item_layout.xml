@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_sugger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_press_blood"
+        android:layout_alignBottom="@+id/btn_press_blood"
+        android:layout_toLeftOf="@+id/btn_press_blood"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_01"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="血糖"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_press_blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_laboratory"
+        android:layout_alignBottom="@+id/btn_laboratory"
+        android:layout_toLeftOf="@+id/btn_laboratory"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_03"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="血压"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_laboratory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_health_record"
+        android:layout_alignRight="@+id/btn_health_record"
+        android:layout_marginBottom="30dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_05"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="化验单"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/btn_hemoglobin"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_10"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="BMI"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_hemoglobin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_11"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="糖化血红蛋白"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_health_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/btn_hemoglobin"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/tjjilu_12"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:text="生活日志"
+        android:textColor="@color/text_color_2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

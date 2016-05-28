@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sprite_line"
+        style="@style/patient_item_sprite_line"
+        android:layout_marginLeft="10.0dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seletion_default_btn"
+        android:paddingTop="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/basicfile_key"
+            style="@style/text_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:paddingRight="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/basicfile_value"
+            style="@style/text_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basicfile_key"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:textColor="@color/theme_color_green"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

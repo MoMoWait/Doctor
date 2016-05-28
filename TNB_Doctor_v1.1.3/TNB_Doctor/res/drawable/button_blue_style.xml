@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- pressed -->
+
+    <item android:drawable="@drawable/white_bound_blue_fill" android:state_enabled="true" android:state_pressed="false"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/btn_color_default" android:state_enabled="false" android:state_pressed="false"></item>
+
+</selector>

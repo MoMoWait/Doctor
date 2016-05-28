@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical">
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.comvee.tnb.view.IndexBottomView
+        android:id="@+id/layout_frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_frame_bottom"
+        android:layout_below="@id/main_titlebar_view"
+        android:background="@color/backage_color"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/select_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/seletion_default_btn"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="12dip"
+                        android:drawableTop="@drawable/yisheng_01"
+                        android:gravity="center"
+                        android:text="@string/ask_index_select_doc"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_vertical"
+                    android:layout_height="120dip"
+                     />
+
+                <LinearLayout
+                    android:id="@+id/problem_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/seletion_default_btn"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="12dip"
+                        android:drawableTop="@drawable/yisheng_03"
+                        android:gravity="center"
+                        android:text="@string/ask_index_problem_db"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <com.comvee.tnb.ui.record.diet.AutoLoopViewPager
+                android:id="@+id/ask_viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dip"
+                android:visibility="gone"></com.comvee.tnb.ui.record.diet.AutoLoopViewPager>
+
+            <LinearLayout
+                android:id="@+id/group_my_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/ask_index_my_doc"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <com.comvee.tnb.widget.MyListView
+                    android:id="@+id/lv_my_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/line"
+                    android:dividerHeight="0.4dip"
+                    android:listSelector="@drawable/seletion_default_btn"></com.comvee.tnb.widget.MyListView>
+
+                <RelativeLayout
+                    android:id="@+id/loader_more_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_default_btn"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/loader_more"
+                        android:textColor="@color/theme_color_green"
+                        android:textSize="16sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressbar"
+                        style="@style/myProgressBarStyle"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tv_load"
+                        android:indeterminateDuration="700"
+                        android:visibility="gone" />
+
+                    <View
+                        style="@style/patient_item_sprite_line"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/ask_index_recommend"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <com.comvee.tnb.widget.MyListView
+                    android:id="@+id/lv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:listSelector="@drawable/seletion_default_btn"></com.comvee.tnb.widget.MyListView>
+
+                <View style="@style/patient_item_sprite_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

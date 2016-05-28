@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.comvee.tnb.ui.xlistview.XListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backage_color"
+            android:childDivider="@null"
+            android:divider="@null"
+            android:footerDividersEnabled="true"
+            android:listSelector="@color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/lin_group_of_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/loadingImageView_of_search"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:minWidth="120dp"
+                android:src="@drawable/loading_anim" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_of_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/patient_item_sprite_line"
+        android:visibility="gone" />
+
+</LinearLayout>

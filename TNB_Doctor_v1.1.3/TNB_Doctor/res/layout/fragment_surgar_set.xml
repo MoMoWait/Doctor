@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backage_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/surgar_set_fasting"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_limosis_min"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/surgar_lowest_value"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_limosis_min"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_limosis_max"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/surgar_maximum_value"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_limosis_max"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/surgar_not_fasting"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_nolimosis_min"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/surgar_lowest_value"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_nolimosis_min"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_nolimosis_max"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/surgar_maximum_value"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_nolimosis_max"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginBottom="5dip" />
+
+            <Button
+                android:id="@+id/btn_restore"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/surgar_recover_defaultvalue" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

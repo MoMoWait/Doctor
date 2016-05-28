@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/new_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/item_img_type_mini"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/about_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/item_img_type_mini"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/type_mini_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="标题aaaaa"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/type_mini_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="大苏打撒旦撒旦撒旦撒旦撒打算"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/type_mini_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rect_round_graycolor"
+            android:padding="3dp"
+            android:text="11265阅读"
+            android:textColor="#999999"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_img_type_more"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/type_more_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:singleLine="true"
+            android:text="哈大苏打撒旦撒"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type_more_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/about_logo" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/about_logo" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:background="@drawable/about_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/type_more_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rect_round_graycolor"
+            android:padding="3dp"
+            android:text="11265阅读"
+            android:textColor="#999999"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_img_type_max"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/type_max_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:singleLine="true"
+            android:text="哈大苏打撒旦撒"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/type_max_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/about_logo" />
+
+        <TextView
+            android:id="@+id/type_max_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rect_round_graycolor"
+            android:padding="3dp"
+            android:text="11265阅读"
+            android:textColor="#999999"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+</LinearLayout>

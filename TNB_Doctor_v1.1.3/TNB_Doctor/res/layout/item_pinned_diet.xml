@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+     android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:gravity="center"
+        android:text="afdfad"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backage_color"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <View style="@style/patient_item_sprite_line" />
+
+</LinearLayout>

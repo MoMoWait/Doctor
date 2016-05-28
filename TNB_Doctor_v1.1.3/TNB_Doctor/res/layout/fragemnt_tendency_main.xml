@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="2dip"
+                android:drawableTop="@drawable/tendency_btn_list"
+                android:gravity="center_horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/list"
+                android:textColor="@color/theme_color_green"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_right"
+                android:layout_width="40dip"
+                android:layout_height="45dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/theme_color_green"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_right"
+                android:layout_toRightOf="@+id/btn_left" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tendency_main_day"
+                    android:textColor="@color/text_defualt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tendecy_left"
+                    android:gravity="center"
+                    android:text="@string/tendency_main_week"
+                    android:textColor="@color/theme_color_green"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tendecy_center"
+                    android:gravity="center"
+                    android:text="@string/tendency_main_month"
+                    android:textColor="@color/theme_color_green"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tendecy_right"
+                    android:gravity="center"
+                    android:text="@string/tendency_main_three_month"
+                    android:textColor="@color/theme_color_green"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_tendency"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom_bar"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </RelativeLayout>
+
+        <View
+           style="@style/patient_item_sprite_line" 
+            android:layout_below="@+id/layout_tendency"
+           />
+    </RelativeLayout>
+
+</LinearLayout>

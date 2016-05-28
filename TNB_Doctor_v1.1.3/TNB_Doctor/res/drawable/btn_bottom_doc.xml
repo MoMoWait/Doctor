@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--未点击-->
+    <item android:drawable="@drawable/index_table_03" android:state_pressed="false" android:state_selected="false" />
+    <!-- 点击 -->
+    <item android:drawable="@drawable/index_table_08" android:state_pressed="true" android:state_selected="false" />
+    <!-- 选中 -->
+    <item android:drawable="@drawable/index_table_08" android:state_selected="true"></item>
+</selector>

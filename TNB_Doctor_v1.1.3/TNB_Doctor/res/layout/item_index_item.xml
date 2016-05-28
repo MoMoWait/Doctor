@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_index_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seletion_default_btn"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_index_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/tv_index_label"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_index_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_index_icon"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_index_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_index_label"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/tv_index_label"
+        android:paddingLeft="5dip"
+        android:singleLine="true"
+        android:textColor="@color/text_defualt"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_index_decs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_index_label"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/iv_index_icon"
+        android:maxLines="2"
+        android:textColor="@color/text_defualt"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_complete"
+        android:layout_width="18dip"
+        android:layout_height="11dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/family_choose"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>

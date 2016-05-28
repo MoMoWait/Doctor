@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/top_bar_padding">
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Button_Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/first1_start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_marginBottom="30dip"
+        android:gravity="center"
+        android:text="@string/first1_guide"
+        android:textColor="@color/btn_green"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_marginBottom="70dip"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/register_infex" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/hyd_35" />
+
+</RelativeLayout>

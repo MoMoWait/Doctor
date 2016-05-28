@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.view.IndexBottomView
+        android:id="@+id/layout_frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_frame_bottom"
+        android:background="@color/backage_color"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/index_new_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="300"/>
+
+            <RelativeLayout android:id="@+id/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="85dp" >
+                
+            </RelativeLayout>
+            <!-- <com.comvee.tnb.view.IndexBannerView
+                android:id="@+id/banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="85dp" >
+            </com.comvee.tnb.view.IndexBannerView>
+ -->
+            <include layout="@layout/index_category_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="0dp"
+                android:layout_weight="100"/>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

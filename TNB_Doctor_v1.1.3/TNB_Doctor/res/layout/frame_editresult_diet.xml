@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/patient_item_sprite_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="我的饮食"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="1px"
+                android:paddingTop="15dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/meal_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ysjl_01" />
+
+                    <TextView
+                        android:id="@+id/meal_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/meal_img"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="ff"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/meal_time"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/meal_img"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="fffasds"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <com.comvee.tnb.widget.GridView4Conflict
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" >
+                </com.comvee.tnb.widget.GridView4Conflict>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/toset_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backage_color"
+                    android:padding="10dp"
+                    android:text="餐后血糖检测提醒"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="餐后1小时"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/check0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/cb_check_bg"
+                        android:minWidth="50dip"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="餐后2小时"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/check1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/cb_check_bg"
+                        android:minWidth="50dip"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seletion_default_btn"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="餐后3小时"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/cb_check_bg"
+                        android:minWidth="50dip"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" />
+                </RelativeLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backage_color"
+                android:padding="10dp"
+                android:text="为你推荐"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <ImageView
+                android:id="@+id/to_doimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/yinshi_39" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/result_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/to_do"
+                    style="@style/Button_blue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="去交换" />
+            </LinearLayout>
+
+            <View style="@style/patient_item_sprite_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

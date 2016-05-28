@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/backage_color_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="45dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/loding_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tanchuang_17"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/loadingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:minWidth="90dp"
+                android:src="@drawable/loading_anim" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/id_tv_loadingmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

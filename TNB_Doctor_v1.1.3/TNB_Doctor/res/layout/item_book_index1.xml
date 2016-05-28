@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/seletion_default_btn"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_head" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_photo"
+        android:text="@string/item_book_check_knoweledge"
+        android:textColor="@color/theme_color_green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_decs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_photo"
+      android:text="@string/item_book_check_knoweledge"
+        android:textColor="@color/text_defualt"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dir_right" />
+
+</RelativeLayout>

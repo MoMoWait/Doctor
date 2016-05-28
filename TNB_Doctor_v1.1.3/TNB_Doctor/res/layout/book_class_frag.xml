@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ProgressBar
+        android:id="@+id/pro_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:progressDrawable="@drawable/progress_drawable" />
+    
+    <ImageView 
+        android:id="@+id/class_line"
+        style="@style/line_horizontal"
+        android:layout_above="@+id/layout_bottom"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eeffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            style="@style/Button_Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dip"
+            android:text="@string/book_class_pre_pag"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/Button_Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dip"
+            android:text="@string/book_class_nex_pag"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/class_line"
+        android:layout_below="@id/pro_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

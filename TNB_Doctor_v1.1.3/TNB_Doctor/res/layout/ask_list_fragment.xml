@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backage_color" >
+
+        <com.comvee.tnb.ui.xlistview.XListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/seletion_default_btn" >
+        </com.comvee.tnb.ui.xlistview.XListView>
+
+        <TextView
+            android:id="@+id/layout_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dip"
+            android:drawableTop="@drawable/task_no_data"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/ask_list_nosee"
+            android:textColor="@color/text_color_1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

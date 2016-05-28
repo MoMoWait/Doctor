@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.comvee.tnb.ui.xlistview.XListView
+            android:id="@+id/list_view_of_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/seletion_default_btn" >
+        </com.comvee.tnb.ui.xlistview.XListView>
+
+        <LinearLayout
+            android:id="@+id/lin_group_of_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/loadingImageView_of_search"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:minWidth="120dp"
+                android:src="@drawable/loading_anim" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_of_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healthknowledge_search_searching"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dip"
+        android:orientation="vertical" >
+
+        <View
+           style="@style/patient_item_sprite_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:gravity="center"
+
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+     &lt;!&ndash;   <LinearLayout
+            android:id="@+id/btn_to_ask_doc"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/button_green"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/btn_remind_add"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_green"
+                android:drawableLeft="@drawable/left_frag_doc"
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:text="@string/healthknowledge_search_consult_doctor"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>&ndash;&gt;
+    </LinearLayout>-->
+
+</LinearLayout>

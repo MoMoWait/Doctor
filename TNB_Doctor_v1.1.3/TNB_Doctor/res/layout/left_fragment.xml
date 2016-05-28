@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2539">
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/btn_set"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_frag_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#1c2539"
+                android:drawablePadding="10dp"
+                android:text="@string/setting"
+                android:textColor="#93959c"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="#19ffffff" />
+
+        <LinearLayout
+            android:id="@+id/btn_folk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_frag_family" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#1c2539"
+                android:gravity="right|center_vertical"
+                android:text="@string/left_fragment_familly"
+                android:textColor="#93959c"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomlayout"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_frag_avator"
+                android:drawingCacheQuality="low"
+                android:paddingTop="@dimen/top_bar_padding">
+
+                <com.comvee.ui.rippleview.RippleView
+                    android:id="@+id/img_photo_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    app:rv_alpha="0"
+                    app:rv_zoom="true"
+                    app:rv_zoomDuration="250"
+                    app:rv_zoomScale="1.2">
+
+                    <com.comvee.ui.RoundedImageView
+                        android:id="@+id/img_photo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="15dip"
+                        android:src="@drawable/icon_head"
+                        app:border_color="@color/member_center_poto_bound"
+                        app:border_width="2dp"
+                        app:is_oval="true" />
+                </com.comvee.ui.rippleview.RippleView>
+
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:singleLine="true"
+                    android:layout_alignBottom="@id/img_photo_zoom"
+                    android:layout_alignTop="@id/img_photo_zoom"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/img_photo_zoom"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_bar_padding">
+
+                <TextView
+                    android:id="@+id/btn_index"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:drawableLeft="@drawable/left_frag_index"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_first_page"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btn_server"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:drawableLeft="@drawable/left_frag_doc"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_my_doctor"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+                <RelativeLayout
+                    android:id="@+id/btn_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item">
+
+                    <TextView
+                        android:id="@+id/my_msg"
+                        style="@style/left_frag_text_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+
+                        android:drawableLeft="@drawable/xinzf_11"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_my_message"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_msg_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dip"
+                        android:layout_toLeftOf="@+id/left_image1"
+                        android:background="@drawable/bg_oval_red"
+                        android:gravity="center"
+
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="1dp"
+                        android:singleLine="true"
+                        android:text="32"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/left_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/left_frag_dir" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_wallet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item">
+
+                    <TextView
+                        style="@style/left_frag_text_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:drawableLeft="@drawable/jiance_10"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_my_wallet"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/left_frag_dir" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btn_my_task"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:drawableLeft="@drawable/left_frag_mission"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_my_task"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btn_my_collect"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:drawableLeft="@drawable/left_frag_collection"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_my_collection"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/btn_my_download"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:drawableLeft="@drawable/play_down_mini"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="我的下载"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+                <RelativeLayout
+                    android:id="@+id/btn_equipment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item">
+
+                    <TextView
+                        android:id="@+id/my_equipment"
+                        style="@style/left_frag_text_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:drawableLeft="@drawable/left_frag_equipment"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_my_device"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_equipment"
+                        style="@style/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/my_equipment"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_unbind"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/left_frag_dir" />
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/follow_lin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_except"
+                        style="@style/left_frag_text_white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/seletion_left_frag_item"
+                        android:drawableLeft="@drawable/suifang_800_37"
+                        android:drawableRight="@drawable/dir_right"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_exception_warm"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/btn_follow"
+                        style="@style/left_frag_text_white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/seletion_left_frag_item"
+                        android:drawableLeft="@drawable/suifang_800_36"
+                        android:drawableRight="@drawable/dir_right"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:text="@string/left_fragment_follow_record"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_paylist_mrg"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:contentDescription="订单管理"
+                    android:drawableLeft="@drawable/left_frag_pay"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_order_manager"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btn_month_info"
+                    style="@style/left_frag_text_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/seletion_left_frag_item"
+                    android:contentDescription="阅读报告"
+                    android:drawableLeft="@drawable/left_frag_mou"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/left_fragment_monthly_summary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

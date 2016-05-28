@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#df000000"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="60dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dialog_content"
+        android:minWidth="280dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_color_green"
+            android:padding="10dp"
+            android:tag="false"
+            android:text="@string/window_input_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_ok"
+            android:layout_below="@id/tv_title" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/check_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_check_style0"
+                    android:drawableRight="@drawable/check_style_1_a"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
+
+                <LinearLayout
+                    android:id="@+id/check_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/check_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_check_style0"
+                    android:drawableRight="@drawable/check_style_1_a"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:tag="false"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/ok"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

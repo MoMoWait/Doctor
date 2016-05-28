@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <View style="@style/patient_item_sprite_line" 
+        android:layout_height="0.3dip"/>
+    
+    <TextView
+        android:id="@+id/basicfile_tv_pcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/follow_item_base_inf"
+        android:textColor="@color/theme_color_green"
+        android:textSize="15.0dip" />
+
+    <View style="@style/patient_item_sprite_line" />
+
+</LinearLayout>

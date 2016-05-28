@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backage_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="15dip"
+                 />
+
+            <LinearLayout
+                android:id="@+id/lin_select_drug"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/pharmacy_set_time_drug_name"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/pharmacy_set_time_choose_drug"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textColor="#666666"
+                    android:textColorHint="@color/line"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/lin_select_drug_num"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/pharmacy_set_time_drug_amount"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/pharmacy_set_time_drug_time"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/line_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/remind_week"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remind_time"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_week_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_mond"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_week_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_tues"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_week_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_wen"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_week_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_thur"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_week_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_fri"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_week_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_sat"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_week_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="7dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_blue"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_sun"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="33dip"
+                            android:layout_marginLeft="7dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/pharmacy_week_bg_default"
+                            android:gravity="center"
+                            android:text="@string/pharmacy_set_time_mond"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="15sp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_2"
+                style="@style/line_horizontal" />
+
+            <com.comvee.tnb.widget.MyListView
+                android:id="@+id/listview_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@null"
+                android:listSelector="@drawable/seletion_default_btn" >
+            </com.comvee.tnb.widget.MyListView>
+
+            <View
+                android:id="@+id/line"
+                style="@style/line_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_add_time"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/tianjia"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/pharmacy_set_time_add_time"
+                android:textColor="@color/theme_color_green"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line_1"
+                style="@style/line_horizontal" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="15dip"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/group_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/pharmacy_set_time_lauch_tip"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/check_pharmacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/cb_check_bg"
+                    android:minWidth="50dip"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_horizontal" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="15dip"
+                />
+
+            <EditText
+                android:id="@+id/edt_decs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seletion_default_btn_white"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="@string/saveSms"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:minWidth="60dip"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/line"
+                android:textSize="16sp" >
+            </EditText>
+
+            <View
+                style="@style/line_horizontal" />
+
+            <Button
+                android:id="@+id/btn_remove"
+                style="@style/Button_Red1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:text="@string/delete"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

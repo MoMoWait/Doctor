@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ededf5"
+        android:gravity="center"
+        android:paddingBottom="2.5dp"
+        android:paddingTop="2.5dp"
+        android:text="@string/date"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_value0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:background="#fff2d7"
+        android:gravity="center"
+        android:paddingBottom="2.5dp"
+        android:paddingTop="2.5dp"
+        android:text="@string/record_sugar_food"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_value1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:background="#fde8d3"
+        android:gravity="center"
+        android:paddingBottom="2.5dp"
+        android:paddingTop="2.5dp"
+        android:text="@string/sport"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_index_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/seletion_default_btn"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/doctor1"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:maxLines="2"
+        android:drawablePadding="10dip"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:drawableRight="@drawable/left_frag_dir"
+        android:textSize="14sp" />
+
+    
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <com.comvee.tnb.widget.HorizontalListView
+            android:id="@+id/time_bucket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/add_item"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:layout_toLeftOf="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/news_tba_rightblock" />
+
+        <LinearLayout
+            android:id="@+id/add_item"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_news_item" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_horizontal"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_knowledge_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

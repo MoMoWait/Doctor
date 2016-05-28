@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_small_size">15sp</dimen>
+    <dimen name="text_middle_size">16sp</dimen>
+    <dimen name="text_big_size">20sp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="heart_width">5000dp</dimen>
+    <dimen name="button_radius">5dp</dimen>
+    <dimen name="activity_statusbar_height">25.5dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="space_7">7dp</dimen>
+    <dimen name="space_9">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sp13">13sp</dimen>
+    <dimen name="sp15">15sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp17">17sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="head_paddingtop">15dp</dimen>
+    <dimen name="luancher_width">300dip</dimen>
+    <dimen name="dot_margin_bottom">90dip</dimen>
+    <dimen name="top_bar_padding">0dp</dimen>
+    
+</resources>

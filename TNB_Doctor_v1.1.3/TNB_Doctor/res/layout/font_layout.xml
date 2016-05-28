@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dip"
+        android:background="@drawable/font_set_bg"
+        android:minWidth="280dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="false"
+                android:text="@string/follow_question_content_font"
+                android:textColor="@color/text_color_1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_select"
+                android:gravity="center_vertical|left"
+                android:padding="10dp"
+                android:tag="false"
+                android:text="@string/follow_question_specify_large"
+                android:textColor="@color/text_color_1"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tv_max_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:padding="10dp"
+                android:tag="false"
+                android:text="@string/follow_question_large_word"
+                android:textColor="@color/text_color_1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:padding="10dp"
+                android:tag="false"
+                android:text="@string/follow_question_middle_word"
+                android:textColor="@color/text_color_1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:padding="10dp"
+                android:tag="false"
+                android:text="@string/follow_question_small_word"
+                android:textColor="@color/text_color_1"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_marginTop="10dip"
+                style="@style/patient_item_sprite_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/cancel"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="45dp"
+                    android:background="@color/line" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/ok"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/radio_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:src="@drawable/radio_play_detail_play"
+        android:visibility="gone"
+         />
+
+    <RelativeLayout
+        android:id="@+id/radio_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+       android:visibility="gone"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/white">
+            <View
+                style="@style/line_horizontal"
+                android:background="@color/color_gray_bg" />
+            <LinearLayout
+                android:id="@+id/radio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/btn_control"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="14sp" />
+
+                <com.comvee.tnb.view.RadioMarqueeTextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/follow_no_repeat"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_next"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="21dp"
+                android:src="@drawable/radio_play_detail_pause" />
+
+            <ImageView
+                android:id="@+id/btn_next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="18dp"
+                android:src="@drawable/radio_play_detail_next" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edt_pwd_old"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_up"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/change_pwd_input_native_pwd"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_pwd_new"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_center"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/change_pwd_input_newpwd"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_pwd_repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white_buttom"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:hint="@string/change_pwd_input_repeat"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#b1b1b1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/btn_ok"
+        style="@style/Button_Green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="完成" />
+    -->
+
+</LinearLayout>

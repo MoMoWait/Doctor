@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/ask_tell_ensure_mes"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tell_detail_label_1"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tell_docname"
+                        style="@style/text_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:text="理论上的纠纷的"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tell_booking_date"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tell_date"
+                        style="@style/text_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:text="理论上的纠纷的"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tell_booking_time"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tell_time"
+                        style="@style/text_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:text="理论上的纠纷的"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/patient_item_sprite_line"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tell_booking_surplus_num"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tell_num"
+                        style="@style/text_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:text="理论上的纠纷的"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:text="@string/ask_tell_full_pho_num"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="16sp" />
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tell_booking_phone"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_tell_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="11"
+                        android:paddingRight="10dp"
+                        android:phoneNumber="true"
+                        android:text="111111111111111"
+                        android:textColor="@color/text_color_2" />
+                </LinearLayout>
+
+                <View style="@style/patient_item_sprite_line" />
+
+                <Button
+                    android:id="@+id/btn_verify_order"
+                    style="@style/Button_Green"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ask_tell_sure_appo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/no_tell_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dip"
+                        android:drawablePadding="20dip"
+                        android:drawableTop="@drawable/task_no_data"
+                        android:gravity="center"
+                        android:text="@string/ask_tell_sorry_ask_tip"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dip"
+                        android:gravity="center"
+                        android:text="@string/ask_tell_no_doc_tip"
+                        android:textColor="#666666"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:id="@+id/btn_buy_doc_server"
+                        style="@style/Button_Green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/ask_tell_buy_now"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:gravity="left"
+                        android:text="@string/ask_tell_buy_tip"
+                        android:textColor="#666666"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:id="@+id/btn_buy_sugar"
+                        style="@style/Button_Green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/ask_tell_about_dev"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

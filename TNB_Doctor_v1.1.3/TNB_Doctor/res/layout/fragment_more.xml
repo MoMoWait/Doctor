@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/btn_more_remid"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_remind_set"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/line"
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/btn_more_sugar_target"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_sugar_setting"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/btn_qq"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="@string/more_QQ_bind"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:drawableRight="@drawable/left_frag_dir"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="@string/more_no_bind"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/btn_change_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_modify_pwd"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <!--
+                      <TextView
+                android:id="@+id/btn_remind"
+                style="@style/text_black"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white_up"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text="提醒设置"
+                android:textSize="18sp" />
+            -->
+
+            <TextView
+                android:id="@+id/btn_update"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_update_app"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/btn_assess"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_evaluation"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/btn_suggest"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_feedback"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/btn_statement"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_statement"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/btn_about"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/seletion_default_btn"
+                android:drawableRight="@drawable/left_frag_dir"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/more_about"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <Button
+                android:id="@+id/btn_unregist"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_unregist_new"
+                android:text="@string/more_login_out"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

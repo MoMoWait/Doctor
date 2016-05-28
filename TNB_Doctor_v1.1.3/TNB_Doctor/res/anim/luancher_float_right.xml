@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillBefore="true"
+    android:repeatCount="100"
+    android:repeatMode="restart" >
+
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:toXDelta="0"
+        android:toYDelta="-50%" >
+    </translate>
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="1000"
+        android:toXDelta="0"
+        android:toYDelta="50%" >
+    </translate>
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="2000"
+        android:toXDelta="0"
+        android:toYDelta="-50%" >
+    </translate>
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="3000"
+        android:toXDelta="0"
+        android:toYDelta="50%" >
+    </translate>
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="4000"
+        android:toXDelta="0"
+        android:toYDelta="-50%" >
+    </translate>
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="5000"
+        android:toXDelta="0"
+        android:toYDelta="50%" >
+    </translate>
+
+</set>

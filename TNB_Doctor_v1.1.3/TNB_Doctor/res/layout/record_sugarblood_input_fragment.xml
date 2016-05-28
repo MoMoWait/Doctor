@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backage_color"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_record_decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/showButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/set"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon00" />
+            </RelativeLayout>
+
+            <com.comvee.tnb.widget.HorizontalListView
+                android:id="@+id/time_bucket"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@android:color/white" >
+            </com.comvee.tnb.widget.HorizontalListView>
+
+            <View
+                style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="40dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/sugar_indicator_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/jilu_65" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginTop="35dp"
+                        android:text="@string/record_sugarblood_testval"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp"
+                        android:drawableRight="@drawable/jilu_53"
+                        android:textColor="#ff3300"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="mmol/L"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/set_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_textview"
+                    android:text="@string/record_sugarblood_control_target"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    style="@style/line_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_medicine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:text="@string/record_sugarblood_drug"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicine0"
+                        style="@style/record_item_input"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:text="@string/none"
+                        android:textColor="#afafaf"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/medicine1"
+                        style="@style/record_item_input"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:text="@string/record_sugarblood_appropriate"
+                        android:textColor="#afafaf"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/medicine2"
+                        style="@style/record_item_input"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:text="@string/record_sugarblood_too_less"
+                        android:textColor="#afafaf"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/medicine3"
+                        style="@style/record_item_input"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="@string/record_sugarblood_too_more"
+                        android:textColor="#afafaf"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizontal"
+                    android:layout_marginTop="15dip"
+                   />
+
+                <EditText
+                    android:id="@+id/edt_decs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:hint="@string/saveSms"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <View
+                    style="@style/line_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_decs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/text_defualt"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_remove"
+                        style="@style/Button_Red1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:text="删除"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        style="@style/Button_Green1"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1"
+                        android:text="@string/save" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

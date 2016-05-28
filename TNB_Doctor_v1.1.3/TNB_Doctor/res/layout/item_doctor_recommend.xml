@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/task_sign_1"
+        android:drawableLeft="@drawable/task_sign_2"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:text="@string/item_doctor_recommend_today_recommend"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border"
+        android:gravity="left|top"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

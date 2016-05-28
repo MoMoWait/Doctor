@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_press_bg"
+    android:paddingTop="@dimen/top_bar_padding" >
+
+    <com.comvee.ui.RoundedImageView
+        android:id="@+id/img_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_head"
+        app:border_color="#ffffff"
+        app:border_width="2px"
+        app:is_oval="true" />
+
+    <View
+        android:id="@+id/index_red_dot"
+        android:layout_width="7dip"
+        android:layout_height="7dip"
+        android:layout_marginLeft="28dip"
+        android:background="@drawable/bg_round_fill_red" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

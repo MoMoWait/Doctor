@@ -1,0 +1,113 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+com.euler.cloudfix.annotation.MethodReplace
+-keep class * extends java.lang.annotation.Annotation
+-keepclasseswithmembernames class * {
+    native ;
+}
+-keep class com.zbar.** { *; }
+-keep class org.apache.** { *; }
+-keep class cn.sharesdk.** { *; }
+-keep class com.comvee.tnb.model.** { *; }
+-keep class com.alipay.** { *; }
+-keep class com.baidu.** { *; }
+-keep class m.framework.** { *; }
+-keep class com.sina.** { *; }
+-keep class com.tencent.** { *; }
+-keep class com.ta.** { *; }
+-keep class com.ut.** { *; }
+-keep class m.framework.** { *; }
+-keep class com.google.gson.** { *; }
+-keep class com.comvee.tnb.ui.book.BookIndexRootFragment { *; }
+-keep class com.comvee.tnb.ui.book.BookIndexRootFragment$JSClient { *; }
+-keep class com.comvee.tnb.ui.book.BookWebFragment$JSClient{ *; }
+-keep class com.comvee.tnb.ui.book.BookWebFragment$HandlerS{ *; }
+ -keep class com.comvee.tnb.ui.book.BookWebFragment{ *; }
+ -keep class com.comvee.tnb.ui.**{}
+-keep class com.comvee.tnb.ui.more.WebFragment$JSClient{ *; }
+-keep class com.comvee.tnb.ui.more.WebFragment{ *; }
+-keep class com.comvee.tnb.ui.more.WebRegiterFrag{ *; }
+-keep class com.comvee.tnb.ui.more.WebMouthlySummarizeFragment{*;}
+-keep class com.comvee.tnb.ui.more.WebMouthlySummarizeFragment$JSClient{ *; }
+-keep class  com.comvee.tnb.ui.record.RecordMainFragment{ *; }
+-keep class  com.comvee.tnb.ui.record.RecordTableFragment{ *; }
+-keep class  com.comvee.tnb.ui.record.RecordTendencyFragment{ *; }
+
+-keep class com.comvee.tnb.model.**{*;}
+-keep class com.comvee.tnb.http.ComveeTask{ *; }
+
+-keep class com.comvee.cache.**{ *; }
+-keep class  com.comvee.exception.**{ *; }
+-keep class  com.comvee.db.**{ *; }
+-keep class  com.comvee.db.**{ *; }
+-keep class  com.comvee.annotation.**{ *; }
+-keep class  com.comvee.apn.**{ *; }
+-keep class  com.comvee.bitmap.**{ *; }
+-keep class  com.comvee.bitmap.**{ *; }  
+-keep class  com.comvee.bitmap.**{ *; }
+-keep class com.comvee.common.**{ *; }
+-keep class  com.comvee.http.**{ *; }  
+-keep class  com.comvee.reflect.**{ *; }  
+ 
+-keepattributes *Annotation*  
+-keepattributes *JavascriptInterface*  
+
+-dontwarn com.baidu.**
+
+-keep class com.nostra13.**{*;}
+-keep class com.nostra13.**{*;}
+-keep class com.nostra13.**{*;}
+-keep class cn.sharesdk.**{*;}
+-keep class com.apache.**{*;}
+-keep class com.alipay.**{*;}
+-keep class com.ta.**{*;}
+-keep class com.google.**{*;}
+-keep class com.umeng.**{*;}
+-keep class org.android.**{*;}
+-keep class m.framework.**{*;}
+
+-keep class com.tencent.**{*;}
+
+-keep class com.google.**{*;}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature  
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }  
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }  ##这里需要改成解析到哪个  javabean
+
+##---------------End: proguard configuration for Gson  ----------
+
+

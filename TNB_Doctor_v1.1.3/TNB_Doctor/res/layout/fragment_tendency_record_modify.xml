@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+       <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >   --> 
+
+     
+            <RelativeLayout
+                 android:id="@+id/relative"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 
+                >
+           <Button
+                android:id="@+id/showButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set"
+                android:textSize="12sp" />  
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon00"
+                android:layout_alignParentRight="true"
+               
+                />
+            </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+   >
+            
+            <RelativeLayout
+                android:id="@+id/btn_settime"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_border"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="14dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/text_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tendency_record_modify_record_time" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_settime"
+                    style="@style/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+           
+
+          <LinearLayout
+                android:id="@+id/layout_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+               
+                android:textColor="@color/text_defualt"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hint_info"
+                android:layout_width="fill_parent"
+                android:layout_height="125dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                
+                android:background="@drawable/textview_border_corner"
+                android:visibility="gone"
+                
+               
+                
+                />
+            
+        
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="6dp"
+                >
+                <TextView 
+                    android:id="@+id/diet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_food"
+                    android:layout_marginRight="30dp"
+                    
+                    />
+                
+                 <TextView 
+                     android:id="@+id/none0"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    
+                    
+                    />
+                 
+                  <TextView 
+                    android:id="@+id/moderate"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_appropriate_amount"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                   <TextView 
+                       android:id="@+id/less"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_less"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                    <TextView 
+                        android:id="@+id/more"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_more"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                   
+                    />
+                   
+                    
+                
+                
+            </LinearLayout>
+             
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="6dp"
+                >
+                     <TextView 
+                         android:id="@+id/sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_sport"
+                    android:layout_marginRight="30dp"
+                    />
+                
+                  <TextView 
+                     android:id="@+id/none1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                 
+                  <TextView 
+                    android:id="@+id/moderate1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_appropriate_amount"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                   <TextView 
+                       android:id="@+id/less1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_less"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                    <TextView 
+                        android:id="@+id/more1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_more"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                   
+                    />
+                
+                </LinearLayout>
+                 <!-- 3 -->
+                <LinearLayout
+                android:id="@+id/notnb_emotion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                >   
+                 <TextView 
+                     android:id="@+id/emotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_mood"
+                    android:layout_marginRight="30dp"
+                    />
+               
+                 <TextView 
+                     android:id="@+id/quiet"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_science"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                 
+                  <TextView 
+                      android:id="@+id/fickleness"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_Impetuous"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                   <TextView 
+                       android:id="@+id/grieved"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_sad"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                    <TextView 
+                    android:id="@+id/anger"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/angry"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    />
+                   
+                
+            </LinearLayout>
+            <!-- 糖尿病 -->
+            <LinearLayout 
+                android:id="@+id/tnb_medicine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                >   
+                 <TextView 
+                     android:id="@+id/medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_drug"
+                    android:layout_marginRight="30dp"
+                    />
+               
+                 <TextView 
+                     android:id="@+id/nothing"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                 
+                  <TextView 
+                      android:id="@+id/less11"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_less"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                   <TextView 
+                       android:id="@+id/more11"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_too_more"
+                    android:background="@drawable/textview_border"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+                   
+            </LinearLayout>
+                
+                
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="22dp"
+                
+                >
+                    <TextView 
+                        android:id="@+id/remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendency_record_modify_remark"
+                    android:layout_marginRight="30dp"
+                    />
+
+                    <EditText
+                        android:id="@+id/editSms"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:hint="@string/saveSms"
+                        android:inputType="textMultiLine"
+                        android:minLines="3" />
+                
+            </LinearLayout>
+            
+             
+             
+                
+           
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:text="@string/save" />
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/Button_Green"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:text="@string/delete" 
+                android:layout_marginTop="10dp"
+                />
+                
+            </LinearLayout>
+
+       <!-- android:id="@+id/tv_decs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/text_defualt"
+                android:textSize="12sp" /> -->    
+                
+       
+      
+  <!-- </ScrollView> --> 
+
+</LinearLayout>

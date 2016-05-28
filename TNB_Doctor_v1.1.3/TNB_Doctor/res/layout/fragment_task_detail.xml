@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backage_color"
+    android:orientation="vertical" >
+
+    <com.comvee.tnb.widget.TitleBarView
+        android:id="@+id/main_titlebar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/backage_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants" >
+
+            <LinearLayout
+                android:id="@+id/lin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:src="@drawable/img_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/lin_left"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label"
+                android:layout_toRightOf="@+id/lin_left"
+                android:lineSpacingMultiplier="0.9"
+                android:paddingTop="5dip"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip"
+                android:layout_toRightOf="@+id/lin_left"
+                android:src="@drawable/xinz_27"
+                android:textColor="@color/line" />
+
+            <TextView
+                android:id="@+id/tv_stauts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/re_two"
+                android:lineSpacingMultiplier="0.9"
+                android:text="@string/task_detail_task_progress"
+                android:textColor="@color/theme_color_green"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/re_two"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_toRightOf="@+id/lin_left" >
+
+                <ProgressBar
+                    android:id="@+id/pro_percent"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="16dp"
+                    android:background="@color/white"
+                    android:progressDrawable="@drawable/common_background_seekbar_style_1" />
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/patient_item_sprite_line"
+                android:layout_below="@+id/re_two"
+                android:layout_marginTop="10dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_modify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_top"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/seletion_default_btn"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View style="@style/patient_item_sprite_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:drawableRight="@drawable/dir_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/setting"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View style="@style/patient_item_sprite_line" />
+        </LinearLayout>
+
+        <com.comvee.tnb.widget.PinnedHeaderListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_below="@+id/btn_modify"
+            android:layout_marginTop="16dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/task_dtail_bottom"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:text="@string/task_detail_remind_me"
+                android:textColor="@color/theme_color_green"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/checkbox_style_0"
+                android:maxWidth="100dp"
+                android:minWidth="65dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/expertindexlistisbg"
+            android:gravity="center"
+            android:text="@string/task_detail_content1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

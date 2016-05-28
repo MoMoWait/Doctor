@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/tv_insertDt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:singleLine="true"
+        android:textColor="#b3b3b3"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_insertDt_value"
+        android:background="@drawable/task_bg_gray"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/tv_deal_state"
+            android:layout_width="41dip"
+            android:layout_height="41dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ask_noti_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ask_noti_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ask_noti_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ask_noti_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ask_noti_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ask_noti_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ask_noti_date"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="8dip"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/ask_noti_seprator"
+            style="@style/patient_item_sprite_line"
+            android:layout_below="@+id/ask_noti_time"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/ask_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ask_noti_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ask_noti_seprator"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/left_frag_dir"
+            android:gravity="left"
+            android:paddingBottom="8dip"
+            android:text="@string/consult_detail"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
